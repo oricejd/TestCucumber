@@ -1,0 +1,66 @@
+	<project name="MS Test" basedir="." default="runtest">
+		<!-- the location of all the jar files we downloaded -->
+		<property name="jars" value="lib"/>
+
+		<target name="classpath">
+			<path id="classpath">
+				<!-- we can set multiple filesets if our jar files are distributed in multiple folders -->
+				<fileset dir="${jars}">
+					<include name="**/*.jar"/>
+				</fileset>
+				<pathelement location="target/classes"/>
+			</path>
+		</target>
+
+		<!-- the ant job for compiling our code -->
+		<target name="compile" depends="classpath">
+			<mkdir dir="target/classes"/>
+			<javac srcdir="src" destdir="target/classes" classpathref="classpath" includeantruntime="false"/>
+		</target>
+
+		<!-- the ant job for running our tests -->
+		<target name="runtest" depends="compile">
+			<mkdir dir="target/cucumber-junit-report"/>
+			<java classname="cucumber.api.cli.Main" fork="true" failonerror="false" resultproperty="cucumber.exitstatus">
+				<classpath refid="classpath"/>
+				<arg value="--format"/>
+				<!-- creates our junit report -->
+				<arg value="junit:target/cucumber-junit-report/results.xml"/>
+				<arg value="--format"/>
+				<arg value="pretty"/>
+				<arg value="--format"/>
+				<!-- creates our cucumber html friendly report -->
+				<arg value="html:target/cucumber-html-report"/>
+				<arg value="--format"/>
+				<!-- creates our cucumber json friendly report -->
+				<arg value="json:target/cucumber.json"/>
+				<arg value="--glue"/>
+				<!-- identifies the package (folder) where the cucumber definitions live -->
+				<arg value="ctest.features"/>
+				<!-- identifies the folder where the feature files live (looks in all subfolders) -->
+				<arg value="src"/>
+			</java>
+
+			<!-- writes out information to junit report -->
+			<junitreport todir="target/cucumber-junit-report">
+				<fileset dir="target/cucumber-junit-report">
+					<include name="results.xml"/>
+				</fileset>
+				<report format="frames" todir="target/cucumber-junit-report"/>
+			</junitreport>
+
+			<!-- checks our exit status, and determines success or failure -->
+			<fail message="Cucumber failed">
+				<condition>
+					<not>
+						<equals arg1="${cucumber.exitstatus}" arg2="0"/>
+					</not>
+				</condition>
+			</fail>
+		</target>
+
+		<!-- the ant job for cleaning up our environment -->
+		<target name="clean">
+			<delete dir="target"/>
+		</target>
+	</project>
