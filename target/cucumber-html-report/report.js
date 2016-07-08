@@ -6,10 +6,6 @@ formatter.feature({
   "id": "ms-demo-test",
   "keyword": "Feature"
 });
-formatter.before({
-  "duration": 6678136722,
-  "status": "passed"
-});
 formatter.scenario({
   "line": 3,
   "name": "MS test scenario 1 - - verify valid search - results found",
@@ -43,8 +39,9 @@ formatter.match({
   "location": "StepDefinitions.goToUrl(String)"
 });
 formatter.result({
-  "duration": 7726512805,
-  "status": "passed"
+  "duration": 92614508,
+  "error_message": "java.lang.NullPointerException\r\n\tat ctest.features.StepDefinitions.goToUrl(Unknown Source)\r\n\tat ✽.Given go to \"http://www.marksandspencer.com/\"(ctest/features/test.feature:4)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -56,23 +53,13 @@ formatter.match({
   "location": "StepDefinitions.searchForItem(String)"
 });
 formatter.result({
-  "duration": 240143017,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "StepDefinitions.verifyFoundItems()"
 });
 formatter.result({
-  "duration": 8510763815,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 9569387,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 3509417572,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "comments": [
@@ -113,8 +100,9 @@ formatter.match({
   "location": "StepDefinitions.goToUrl(String)"
 });
 formatter.result({
-  "duration": 6008885717,
-  "status": "passed"
+  "duration": 222948,
+  "error_message": "java.lang.NullPointerException\r\n\tat ctest.features.StepDefinitions.goToUrl(Unknown Source)\r\n\tat ✽.Given go to \"http://www.marksandspencer.com/\"(ctest/features/test.feature:10)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -126,23 +114,13 @@ formatter.match({
   "location": "StepDefinitions.searchForItem(String)"
 });
 formatter.result({
-  "duration": 229170938,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "StepDefinitions.verifyFoundItems()"
 });
 formatter.result({
-  "duration": 9758918148,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 7363282,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 4650485996,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 14,
@@ -177,8 +155,9 @@ formatter.match({
   "location": "StepDefinitions.goToUrl(String)"
 });
 formatter.result({
-  "duration": 5619425471,
-  "status": "passed"
+  "duration": 225514,
+  "error_message": "java.lang.NullPointerException\r\n\tat ctest.features.StepDefinitions.goToUrl(Unknown Source)\r\n\tat ✽.Given go to \"http://www.marksandspencer.com/\"(ctest/features/test.feature:15)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -190,23 +169,13 @@ formatter.match({
   "location": "StepDefinitions.searchForItem(String)"
 });
 formatter.result({
-  "duration": 195112300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "StepDefinitions.verifyNotFoundItems()"
 });
 formatter.result({
-  "duration": 10374807807,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 9099257,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 3325223469,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 19,
@@ -241,8 +210,9 @@ formatter.match({
   "location": "StepDefinitions.goToUrl(String)"
 });
 formatter.result({
-  "duration": 5502835464,
-  "status": "passed"
+  "duration": 214681,
+  "error_message": "java.lang.NullPointerException\r\n\tat ctest.features.StepDefinitions.goToUrl(Unknown Source)\r\n\tat ✽.Given go to \"http://www.marksandspencer.com/\"(ctest/features/test.feature:20)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -258,9 +228,7 @@ formatter.match({
   "location": "StepDefinitions.verifyNotFound(String,String)"
 });
 formatter.result({
-  "duration": 14487498785,
-  "error_message": "org.openqa.selenium.NoSuchElementException: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"iframe[title\u003d\u0027iframe content\u0027]\"}\nCommand duration or timeout: 10.08 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00272.52.0\u0027, revision: \u00274c2593c\u0027, time: \u00272016-02-11 19:06:42\u0027\nSystem info: host: \u0027APOPA-RO-PC\u0027, ip: \u002710.249.130.209\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_92\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities [{applicationCacheEnabled\u003dtrue, rotatable\u003dfalse, handlesAlerts\u003dtrue, databaseEnabled\u003dtrue, version\u003d43.0.1, platform\u003dWINDOWS, nativeEvents\u003dfalse, acceptSslCerts\u003dtrue, webStorageEnabled\u003dtrue, locationContextEnabled\u003dtrue, browserName\u003dfirefox, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: b65e47e9-b0bc-4096-8e1b-911998e79c61\n*** Element info: {Using\u003dcss selector, value\u003diframe[title\u003d\u0027iframe content\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)\r\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)\r\n\tat selenium.WebDriverDelegate.findElement(Unknown Source)\r\n\tat page.objects.Page.switchToLoginiFrame(Unknown Source)\r\n\tat ctest.features.StepDefinitions.verifyNotFound(Unknown Source)\r\n\tat ✽.When sign-in with credentials: \"mstest@mailinator.com\" \"test1234\"(ctest/features/test.feature:21)\r\nCaused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"iframe[title\u003d\u0027iframe content\u0027]\"}\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00272.52.0\u0027, revision: \u00274c2593c\u0027, time: \u00272016-02-11 19:06:42\u0027\nSystem info: host: \u0027APOPA-RO-PC\u0027, ip: \u002710.249.130.209\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_92\u0027\nDriver info: driver.version: unknown\r\n\tat \u003canonymous class\u003e.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/apopa/AppData/Local/Temp/anonymous3497258549446627653webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)\r\n\tat \u003canonymous class\u003e.fxdriver.Timer.prototype.setTimeout/\u003c.notify(file:///C:/Users/apopa/AppData/Local/Temp/anonymous3497258549446627653webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -273,14 +241,6 @@ formatter.match({
 });
 formatter.result({
   "status": "skipped"
-});
-formatter.after({
-  "duration": 11711061,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 3395337585,
-  "status": "passed"
 });
 formatter.scenario({
   "line": 24,
@@ -315,8 +275,9 @@ formatter.match({
   "location": "StepDefinitions.goToUrl(String)"
 });
 formatter.result({
-  "duration": 4801575692,
-  "status": "passed"
+  "duration": 226655,
+  "error_message": "java.lang.NullPointerException\r\n\tat ctest.features.StepDefinitions.goToUrl(Unknown Source)\r\n\tat ✽.Given go to \"http://www.marksandspencer.com/\"(ctest/features/test.feature:25)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -332,18 +293,12 @@ formatter.match({
   "location": "StepDefinitions.verifyNotFound(String,String)"
 });
 formatter.result({
-  "duration": 14199412180,
-  "error_message": "org.openqa.selenium.NoSuchElementException: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"iframe[title\u003d\u0027iframe content\u0027]\"}\nCommand duration or timeout: 10.69 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00272.52.0\u0027, revision: \u00274c2593c\u0027, time: \u00272016-02-11 19:06:42\u0027\nSystem info: host: \u0027APOPA-RO-PC\u0027, ip: \u002710.249.130.209\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_92\u0027\nDriver info: org.openqa.selenium.firefox.FirefoxDriver\nCapabilities [{applicationCacheEnabled\u003dtrue, rotatable\u003dfalse, handlesAlerts\u003dtrue, databaseEnabled\u003dtrue, version\u003d43.0.1, platform\u003dWINDOWS, nativeEvents\u003dfalse, acceptSslCerts\u003dtrue, webStorageEnabled\u003dtrue, locationContextEnabled\u003dtrue, browserName\u003dfirefox, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 961f5ba2-7d09-4fad-b729-2b754b88e66b\n*** Element info: {Using\u003dcss selector, value\u003diframe[title\u003d\u0027iframe content\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)\r\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)\r\n\tat selenium.WebDriverDelegate.findElement(Unknown Source)\r\n\tat page.objects.Page.switchToLoginiFrame(Unknown Source)\r\n\tat ctest.features.StepDefinitions.verifyNotFound(Unknown Source)\r\n\tat ✽.When sign-in with credentials: \"test@mailinator.com\" \"test1234\"(ctest/features/test.feature:26)\r\nCaused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"iframe[title\u003d\u0027iframe content\u0027]\"}\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00272.52.0\u0027, revision: \u00274c2593c\u0027, time: \u00272016-02-11 19:06:42\u0027\nSystem info: host: \u0027APOPA-RO-PC\u0027, ip: \u002710.249.130.209\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_92\u0027\nDriver info: driver.version: unknown\r\n\tat \u003canonymous class\u003e.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/apopa/AppData/Local/Temp/anonymous4443663111120345130webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)\r\n\tat \u003canonymous class\u003e.fxdriver.Timer.prototype.setTimeout/\u003c.notify(file:///C:/Users/apopa/AppData/Local/Temp/anonymous4443663111120345130webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "StepDefinitions.verifyLoginFailed()"
 });
 formatter.result({
   "status": "skipped"
-});
-formatter.after({
-  "duration": 16586843,
-  "status": "passed"
 });
 });

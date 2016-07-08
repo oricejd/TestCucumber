@@ -1,145 +1,81 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite failures="2" id="0" name="JUnitFormatter" package="cucumber.runtime.formatter" skipped="0" tests="5" time="109.267994">
-    <testcase classname="MS Demo Test" name="MS test scenario 1 - - verify valid search - results found" time="23.165126">
-      <system-out><![CDATA[Given go to "http://www.marksandspencer.com/"...............................passed
-When search for "Socks".....................................................passed
-Then verify found items.....................................................passed
-]]></system-out>
-
-    </testcase>
-
-    <testcase classname="MS Demo Test" name="MS test scenario 2 - verify valid search - results found" time="19.513756">
-      <system-out><![CDATA[Given go to "http://www.marksandspencer.com/"...............................passed
-When search for "shoes".....................................................passed
-Then verify found items.....................................................passed
-]]></system-out>
-
-    </testcase>
-
-    <testcase classname="MS Demo Test" name="MS test scenario 3 - verify invalid search - no results" time="20.848931">
-      <system-out><![CDATA[Given go to "http://www.marksandspencer.com/"...............................passed
-When search for "asasasa"...................................................passed
-Then verify not found items.................................................passed
-]]></system-out>
-
-    </testcase>
-
-    <testcase classname="MS Demo Test" name="MS test scenario 4 - verify successful login" time="23.327269">
-      <failure message="org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;iframe[title=&apos;iframe content&apos;]&quot;}&#xa;Command duration or timeout: 10.08 seconds&#xa;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#xa;Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;&#xa;System info: host: &apos;APOPA-RO-PC&apos;, ip: &apos;10.249.130.209&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;&#xa;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#xa;Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#xa;Session ID: b65e47e9-b0bc-4096-8e1b-911998e79c61&#xa;*** Element info: {Using=css selector, value=iframe[title=&apos;iframe content&apos;]}&#xd;&#xa;&#x9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#xd;&#xa;&#x9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#xd;&#xa;&#x9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#xd;&#xa;&#x9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#xd;&#xa;&#x9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)&#xd;&#xa;&#x9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)&#xd;&#xa;&#x9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)&#xd;&#xa;&#x9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)&#xd;&#xa;&#x9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)&#xd;&#xa;&#x9;at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)&#xd;&#xa;&#x9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)&#xd;&#xa;&#x9;at selenium.WebDriverDelegate.findElement(Unknown Source)&#xd;&#xa;&#x9;at page.objects.Page.switchToLoginiFrame(Unknown Source)&#xd;&#xa;&#x9;at ctest.features.StepDefinitions.verifyNotFound(Unknown Source)&#xd;&#xa;&#x9;at ✽.When sign-in with credentials: &quot;mstest@mailinator.com&quot; &quot;test1234&quot;(ctest/features/test.feature:21)&#xd;&#xa;Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;iframe[title=&apos;iframe content&apos;]&quot;}&#xa;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#xa;Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;&#xa;System info: host: &apos;APOPA-RO-PC&apos;, ip: &apos;10.249.130.209&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;&#xa;Driver info: driver.version: unknown&#xd;&#xa;&#x9;at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/apopa/AppData/Local/Temp/anonymous3497258549446627653webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)&#xd;&#xa;&#x9;at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/apopa/AppData/Local/Temp/anonymous3497258549446627653webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)&#xd;&#xa;"><![CDATA[Given go to "http://www.marksandspencer.com/"...............................passed
-When sign-in with credentials: "mstest@mailinator.com" "test1234"...........failed
-Then verify log in: "test"..................................................skipped
+  <testsuite failures="5" id="0" name="JUnitFormatter" package="cucumber.runtime.formatter" skipped="0" tests="5" time="0.093506">
+    <testcase classname="MS Demo Test" name="MS test scenario 1 - - verify valid search - results found" time="0.092615">
+      <failure message="java.lang.NullPointerException&#xd;&#xa;&#x9;at ctest.features.StepDefinitions.goToUrl(Unknown Source)&#xd;&#xa;&#x9;at ✽.Given go to &quot;http://www.marksandspencer.com/&quot;(ctest/features/test.feature:4)&#xd;&#xa;"><![CDATA[Given go to "http://www.marksandspencer.com/"...............................failed
+When search for "Socks".....................................................skipped
+Then verify found items.....................................................skipped
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"iframe[title='iframe content']"}
-Command duration or timeout: 10.08 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
-System info: host: 'APOPA-RO-PC', ip: '10.249.130.209', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_92'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: b65e47e9-b0bc-4096-8e1b-911998e79c61
-*** Element info: {Using=css selector, value=iframe[title='iframe content']}
+java.lang.NullPointerException
 
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at ctest.features.StepDefinitions.goToUrl(Unknown Source)
 
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
-
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
-
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-
-	at selenium.WebDriverDelegate.findElement(Unknown Source)
-
-	at page.objects.Page.switchToLoginiFrame(Unknown Source)
-
-	at ctest.features.StepDefinitions.verifyNotFound(Unknown Source)
-
-	at ✽.When sign-in with credentials: "mstest@mailinator.com" "test1234"(ctest/features/test.feature:21)
-
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"iframe[title='iframe content']"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
-System info: host: 'APOPA-RO-PC', ip: '10.249.130.209', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_92'
-Driver info: driver.version: unknown
-
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/apopa/AppData/Local/Temp/anonymous3497258549446627653webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
-
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/apopa/AppData/Local/Temp/anonymous3497258549446627653webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+	at ✽.Given go to "http://www.marksandspencer.com/"(ctest/features/test.feature:4)
 
 ]]></failure>
 
     </testcase>
 
-    <testcase classname="MS Demo Test" name="MS test scenario 5 - verify failed login" time="22.412912">
-      <failure message="org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;iframe[title=&apos;iframe content&apos;]&quot;}&#xa;Command duration or timeout: 10.69 seconds&#xa;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#xa;Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;&#xa;System info: host: &apos;APOPA-RO-PC&apos;, ip: &apos;10.249.130.209&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;&#xa;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#xa;Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]&#xa;Session ID: 961f5ba2-7d09-4fad-b729-2b754b88e66b&#xa;*** Element info: {Using=css selector, value=iframe[title=&apos;iframe content&apos;]}&#xd;&#xa;&#x9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#xd;&#xa;&#x9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#xd;&#xa;&#x9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#xd;&#xa;&#x9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#xd;&#xa;&#x9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)&#xd;&#xa;&#x9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)&#xd;&#xa;&#x9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)&#xd;&#xa;&#x9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)&#xd;&#xa;&#x9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)&#xd;&#xa;&#x9;at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)&#xd;&#xa;&#x9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)&#xd;&#xa;&#x9;at selenium.WebDriverDelegate.findElement(Unknown Source)&#xd;&#xa;&#x9;at page.objects.Page.switchToLoginiFrame(Unknown Source)&#xd;&#xa;&#x9;at ctest.features.StepDefinitions.verifyNotFound(Unknown Source)&#xd;&#xa;&#x9;at ✽.When sign-in with credentials: &quot;test@mailinator.com&quot; &quot;test1234&quot;(ctest/features/test.feature:26)&#xd;&#xa;Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;iframe[title=&apos;iframe content&apos;]&quot;}&#xa;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#xa;Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;&#xa;System info: host: &apos;APOPA-RO-PC&apos;, ip: &apos;10.249.130.209&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_92&apos;&#xa;Driver info: driver.version: unknown&#xd;&#xa;&#x9;at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/apopa/AppData/Local/Temp/anonymous4443663111120345130webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)&#xd;&#xa;&#x9;at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/apopa/AppData/Local/Temp/anonymous4443663111120345130webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)&#xd;&#xa;"><![CDATA[Given go to "http://www.marksandspencer.com/"...............................passed
-When sign-in with credentials: "test@mailinator.com" "test1234".............failed
+    <testcase classname="MS Demo Test" name="MS test scenario 2 - verify valid search - results found" time="0.000223">
+      <failure message="java.lang.NullPointerException&#xd;&#xa;&#x9;at ctest.features.StepDefinitions.goToUrl(Unknown Source)&#xd;&#xa;&#x9;at ✽.Given go to &quot;http://www.marksandspencer.com/&quot;(ctest/features/test.feature:10)&#xd;&#xa;"><![CDATA[Given go to "http://www.marksandspencer.com/"...............................failed
+When search for "shoes".....................................................skipped
+Then verify found items.....................................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+
+	at ctest.features.StepDefinitions.goToUrl(Unknown Source)
+
+	at ✽.Given go to "http://www.marksandspencer.com/"(ctest/features/test.feature:10)
+
+]]></failure>
+
+    </testcase>
+
+    <testcase classname="MS Demo Test" name="MS test scenario 3 - verify invalid search - no results" time="0.000226">
+      <failure message="java.lang.NullPointerException&#xd;&#xa;&#x9;at ctest.features.StepDefinitions.goToUrl(Unknown Source)&#xd;&#xa;&#x9;at ✽.Given go to &quot;http://www.marksandspencer.com/&quot;(ctest/features/test.feature:15)&#xd;&#xa;"><![CDATA[Given go to "http://www.marksandspencer.com/"...............................failed
+When search for "asasasa"...................................................skipped
+Then verify not found items.................................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+
+	at ctest.features.StepDefinitions.goToUrl(Unknown Source)
+
+	at ✽.Given go to "http://www.marksandspencer.com/"(ctest/features/test.feature:15)
+
+]]></failure>
+
+    </testcase>
+
+    <testcase classname="MS Demo Test" name="MS test scenario 4 - verify successful login" time="0.000215">
+      <failure message="java.lang.NullPointerException&#xd;&#xa;&#x9;at ctest.features.StepDefinitions.goToUrl(Unknown Source)&#xd;&#xa;&#x9;at ✽.Given go to &quot;http://www.marksandspencer.com/&quot;(ctest/features/test.feature:20)&#xd;&#xa;"><![CDATA[Given go to "http://www.marksandspencer.com/"...............................failed
+When sign-in with credentials: "mstest@mailinator.com" "test1234"...........skipped
+Then verify log in: "test"..................................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+
+	at ctest.features.StepDefinitions.goToUrl(Unknown Source)
+
+	at ✽.Given go to "http://www.marksandspencer.com/"(ctest/features/test.feature:20)
+
+]]></failure>
+
+    </testcase>
+
+    <testcase classname="MS Demo Test" name="MS test scenario 5 - verify failed login" time="0.000227">
+      <failure message="java.lang.NullPointerException&#xd;&#xa;&#x9;at ctest.features.StepDefinitions.goToUrl(Unknown Source)&#xd;&#xa;&#x9;at ✽.Given go to &quot;http://www.marksandspencer.com/&quot;(ctest/features/test.feature:25)&#xd;&#xa;"><![CDATA[Given go to "http://www.marksandspencer.com/"...............................failed
+When sign-in with credentials: "test@mailinator.com" "test1234".............skipped
 Then verify log in failed...................................................skipped
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"iframe[title='iframe content']"}
-Command duration or timeout: 10.69 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
-System info: host: 'APOPA-RO-PC', ip: '10.249.130.209', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_92'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 961f5ba2-7d09-4fad-b729-2b754b88e66b
-*** Element info: {Using=css selector, value=iframe[title='iframe content']}
+java.lang.NullPointerException
 
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at ctest.features.StepDefinitions.goToUrl(Unknown Source)
 
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
-
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
-
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-
-	at selenium.WebDriverDelegate.findElement(Unknown Source)
-
-	at page.objects.Page.switchToLoginiFrame(Unknown Source)
-
-	at ctest.features.StepDefinitions.verifyNotFound(Unknown Source)
-
-	at ✽.When sign-in with credentials: "test@mailinator.com" "test1234"(ctest/features/test.feature:26)
-
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"css selector","selector":"iframe[title='iframe content']"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
-System info: host: 'APOPA-RO-PC', ip: '10.249.130.209', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_92'
-Driver info: driver.version: unknown
-
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/apopa/AppData/Local/Temp/anonymous4443663111120345130webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
-
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/apopa/AppData/Local/Temp/anonymous4443663111120345130webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+	at ✽.Given go to "http://www.marksandspencer.com/"(ctest/features/test.feature:25)
 
 ]]></failure>
 
